@@ -11,13 +11,13 @@ void outputarray(int array[],int size){
     }
 }
 int main(){
-    int n;
+    int size;
     printf("Enter the size of the array : ");
-    scanf("%d",&n);
+    scanf("%d",&size);
 
-    int arr[n];
-    inputarray(arr,n);
-    for(int i = 1; i < n; i++){
+    int arr[size];
+    inputarray(arr,size);
+    for(int i = 1; i < size; i++){
         int key = arr[i];
         int j=i-1;
         while(arr[j] > key && j >= 0){
@@ -28,6 +28,6 @@ int main(){
     }
 
     printf("Array after sorting is : ");
-    outputarray(arr,n);
+    outputarray(arr,size);
     return 0;
 }
