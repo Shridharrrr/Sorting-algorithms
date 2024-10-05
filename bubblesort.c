@@ -15,7 +15,7 @@ int main(){
     int size;
     printf("Enter size of array : ");
     scanf("%d",&size);
-
+//test
     int arr[size];
     inputarray(arr,size);
     bool flag = false;
